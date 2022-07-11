@@ -14,7 +14,7 @@
   
 В качестве фреймворка используется Django, в нем создана одна ветка employees. Шаблоны html страниц находятся в папке templates.
 
-Параметры подключения к БД необходимо изменить на свои в3 файлах: excell_loader.py, gd_dumpss_loader.py и по пути sirius/sirius/settings.py. На данный момент параметры имеют следующий вид: host - localhost, port - 3306, user - badchaos, password - pe0038900, db - sirius (в settings.py db это NAME).
+Параметры подключения к БД необходимо изменить на свои в3 файлах: excell_loader.py, gd_dumpss_loader.py и по пути sirius/sirius/settings.py. На данный момент параметры имеют следующий вид: host - localhost, port - 3306, user - badchaos, password - pe0038900, db - sirius (в settings.py db это NAME). Для создания таблицы выполняется миграция.
 
 Дополнительно реализовано 2 скрипта для выгрузки всей БД в файл excell и гугл таблицу.
 
