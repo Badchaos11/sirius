@@ -20,4 +20,6 @@
 
 Скрипт excell_loader.py получает все данные из таблицы базы данных и с помощью библиотеки pandas сохраняет в xlsx файл.
 
-Скриптgd_dumps_loader.py получает данные из таблицы. После по полученному сервисному аккаунту происходит запись в Google Sheets. Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1dmoUSGS1SGtv9MuMH7rYLbhTU8qREpVZizo9i4OKY_c . Для получения доступа к просмотру таблицы необходимо запустить скрипт get_access.py. В нём поменять почту на свою в строке 30.
+Скрипт gd_dumps_loader.py получает данные из таблицы. После по полученному сервисному аккаунту происходит запись в Google Sheets. Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1dmoUSGS1SGtv9MuMH7rYLbhTU8qREpVZizo9i4OKY_c . 
+
+Для получения доступа к просмотру таблицы необходимо запустить скрипт get_access.py. В нём поменять почту на свою в строке 30.
