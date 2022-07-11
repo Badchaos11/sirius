@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# Модель для взаимодействия с базой данных, поле id создается автоматически
 class Employee(models.Model):
     filial = models.CharField(max_length=100, verbose_name="Филиал")
     fio = models.CharField(max_length=150, verbose_name="ФИО")
