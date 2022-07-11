@@ -1,0 +1,30 @@
+{% extends 'employees/base.html' %}
+
+{% block content %}
+
+	<form method="post" enctype="multipart/form-data">
+		    {% csrf_token %}
+
+    <div class="form-error">{{ form.non_field_errors }}</div>
+		<div class="form-error">{{ form.non_field_errors }}</div>
+		{% for f in form %}
+			<p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+			<div class="form-error">{{ f.errors }}</div>
+		{% endfor %}
+		    <button type="submit">Применить фильтр</button>
+	</form>
+
+
+<ul class="list-employees">
+	{% for e in employees %}
+    <li><div class="employee">
+	    <p class="first">ID: {{e.id}}, Филиал: {{e.filial}}, ФИО {{e.fio}}</p>
+	    <p class="second">Должность: {{e.position}}, Зарплата: {{e.salary}}</p>
+		<p class="third">Дата рождения: {{e.birth}}</p>
+		<p class="last">Дата приема на работу: {{e.comedate}}</p>
+        </div>
+        <div class="clear"></div>
+    </li>
+	{% endfor %}
+</ul>
+{% endblock %}
